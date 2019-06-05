@@ -26,7 +26,7 @@ zuul:
       serviceId: MS-HUB-BACKOFFICE
       stripPrefix: false
     ms-hub-backoffice-liquidacion:
-      path: /ms-hub-backoffice-liquidacion/v1/**
+      path: /hub-backoffice-liquidacion/v1/**
       serviceId: MS-HUB-BACKOFFICE-LIQUIDACION
       stripPrefix: false
     ratelimit:
