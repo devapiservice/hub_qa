@@ -37,6 +37,10 @@ zuul:
       path: /ms-hub-backoffice-liquidacion-360/v1/**
       serviceId: MS-HUB-BACKOFFICE-LIQUIDACION-360
       stripPrefix: false
+    ms-hub-backoffice-reclamos:
+      path: /ms-hub-backoffice-reclamos/v1/**
+      serviceId: MS-HUB-BACKOFFICE-RECLAMOS
+      stripPrefix: false
     ratelimit:
       enabled: false
       repository: IN_MEMORY
