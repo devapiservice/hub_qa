@@ -41,6 +41,10 @@ zuul:
       path: /ms-hub-backoffice-reclamos/v1/**
       serviceId: MS-HUB-BACKOFFICE-RECLAMOS
       stripPrefix: false
+    ms-hub-backoffice-transversales:
+      path: /ms-hub-backoffice-transversales/v1/**
+      serviceId: MS-HUB-BACKOFFICE-TRANSVERSALES
+      stripPrefix: false
     ratelimit:
       enabled: false
       repository: IN_MEMORY
