@@ -45,6 +45,10 @@ zuul:
       path: /ms-hub-backoffice-transversales/v1/**
       serviceId: MS-HUB-BACKOFFICE-TRANSVERSALES
       stripPrefix: false
+    ms-hub-backoffice-generales:
+      path: /ms-hub-backoffice-generales/v1/**
+      serviceId: MS-HUB-BACKOFFICE-GENERALES
+      stripPrefix: false
     ratelimit:
       enabled: false
       repository: IN_MEMORY
