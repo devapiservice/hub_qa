@@ -53,6 +53,10 @@ zuul:
       path: /ms-hub-backoffice-comercio-ordenpago/v1/**
       serviceId: MS-HUB-BACKOFFICE-COMERCIO-ORDENPAGO
       stripPrefix: false
+    ms-hub-backoffice-comercio-consultapago:
+      path: /ms-hub-backoffice-comercio-consultapago/v1/**
+      serviceId: MS-HUB-BACKOFFICE-COMERCIO-CONSULTAPAGO
+      stripPrefix: false
     ratelimit:
       enabled: false
       repository: IN_MEMORY
