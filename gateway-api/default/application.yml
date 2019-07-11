@@ -57,6 +57,10 @@ zuul:
       path: /ms-hub-backoffice-comercio-consultapago/v1/**
       serviceId: MS-HUB-BACKOFFICE-COMERCIO-CONSULTAPAGO
       stripPrefix: false
+    ms-hub-backoffice-comercio-liquidacion360:
+      path: /ms-hub-backoffice-comercio-liquidacion360/v1/**
+      serviceId: MS-HUB-BACKOFFICE-COMERCIO-LIQUIDACION360
+      stripPrefix: false
     ratelimit:
       enabled: false
       repository: IN_MEMORY
