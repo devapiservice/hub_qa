@@ -26,6 +26,7 @@ server.port: ${PORT:}
 server:
   servlet:
     context-path: /ms-hub-backoffice-comercio-ordenpago/v1
+
 management:
   security:
     sessions: stateless
