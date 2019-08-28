@@ -15,7 +15,7 @@ spring:
     properties:
       hibernate:
         default_schema: hub
-        enable_lazy_load_no_tran: true
+
   data:
     mongodb:
       host: localhost
