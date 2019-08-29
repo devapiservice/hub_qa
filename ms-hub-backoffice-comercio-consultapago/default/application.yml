@@ -2,7 +2,7 @@ spring:
   datasource:
     driver-class-name: org.postgresql.Driver
     url: jdbc:postgresql://10.40.4.79:5432/hub-desarrollo
-    username: hub
+    username: hub-none1000
     password: Apimono123
   jpa:
     hibernate:
