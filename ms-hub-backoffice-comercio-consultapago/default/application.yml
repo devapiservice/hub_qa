@@ -18,11 +18,6 @@ spring:
         enable_lazy_load_no_trans: true
         cache:
           use_query_cache: false
-  data:
-    mongodb:
-      host: localhost
-      port: 27017
-      database: hub      
 
 server.port: ${PORT:}
 server:
