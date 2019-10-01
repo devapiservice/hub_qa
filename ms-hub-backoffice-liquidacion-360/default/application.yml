@@ -19,7 +19,12 @@ spring:
     mongodb:
       host: localhost
       port: 27017
-      database: hub      
+      database: hub
+      
+server.port: ${PORT:}
+server:
+  servlet:
+    context-path: ms-hub-backoffice-liquidacion-360/v1
 
 config:
   host: http://172.18.0.4/api/
