@@ -16,7 +16,7 @@ spring:
       hibernate:
         default_schema: hub
 
-server.port: ${PORT:}
+server.port: ${PORT:8089}
 server:
   servlet:
     context-path: /ms-hub-backoffice-liquidacion-consulta/v1
