@@ -22,7 +22,7 @@ spring:
       port: 27017
       database: hub
       
-server.port: ${PORT:}
+server.port: ${PORT:9090}
 server:
   servlet:
     context-path: /ms-hub-backoffice-comercio-ordenpago/v1
