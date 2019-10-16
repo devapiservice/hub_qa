@@ -21,7 +21,7 @@ spring:
       port: 27017
       database: hub
       
-server.port: ${PORT:}
+server.port: ${PORT:9093}
 server:
   servlet:
     context-path: ms-hub-backoffice-liquidacion-360/v1
