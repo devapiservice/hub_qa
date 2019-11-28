@@ -1,13 +1,13 @@
 spring:
   datasource:
     driver-class-name: org.postgresql.Driver
-    url: jdbc:postgresql://10.40.4.79:5432/hub-desarrollo
-    username: hub
+    url: jdbc:postgresql://10.40.4.79:5432/hub-QA
+    username: hub-desa
     password: Apimono123
   jpa:
     hibernate:
       ddl-auto: none
-    show-sql: true
+    show-sql: false
     database: postgresql
     database-platform: org.hibernate.dialect.PostgreSQLDialect
     open-in-view: false
@@ -15,33 +15,11 @@ spring:
     properties:
       hibernate:
         default_schema: hub
-        enable_lazy_load_no_trans: true
-        cache:
-          use_query_cache: false
-
-server.port: ${PORT:}
-server:
-  servlet:
-    context-path: /ms-hub-backoffice-comercio-consultapago/v1
-
-management:
-  security:
-    sessions: stateless
-    enabled: false
-  context-path: /admin
-  port: ${PORT_ADMIN:}
-
-endpoints:
-  restart:
-    enabled: true
-  shutdown:
-    enabled: true
-    
-logging:
-  level:
-    org.springframework.boot: 'INFO'
-    org.springframework.cloud: 'DEBUG'
-    com.atsistemas: 'DEBUG'
+  data:
+    mongodb:
+      host: localhost
+      port: 27017
+      database: hub      
 
 config:
   host: http://172.18.0.4/api/
