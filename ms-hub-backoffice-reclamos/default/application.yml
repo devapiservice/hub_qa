@@ -49,4 +49,4 @@ eureka:
   instance:
     metadata-map:
       management:
-        port: 9090
+        port: 9090 
