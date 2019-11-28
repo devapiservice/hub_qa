@@ -1,7 +1,7 @@
 spring:
   datasource:
     driver-class-name: org.postgresql.Driver
-    url: jdbc:postgresql://10.40.4.79:5432/hub-desarrollo
+    url: jdbc:postgresql://10.40.4.79:5432/hub-QA
     username: hub-desa
     password: Apimono123
   jpa:
@@ -20,6 +20,11 @@ spring:
       host: 10.40.4.98
       port: 27017
       database: hub      
+
+config:
+  host: http://172.18.0.4/api/
+  uri_token_hub: http://172.18.0.4/api/oauth/token
+  host_sifco: http://172.18.0.56:80/
 
 security:
   sessions: stateless
