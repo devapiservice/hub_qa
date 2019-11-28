@@ -13,18 +13,22 @@ zuul:
       path: /oauth/**
       serviceId: OAUTH-SERVER
       stripPrefix: false
+    ms-srdescuento:
+      path: /srdescuentos/v1/**
+      serviceId: MS-SRDESCUENTO
+      stripPrefix: false
+    ms-srdescuento-web:
+      path: /srdescuentos/web/v1/**
+      serviceId: MS-SRDESCUENTO-WEB
+      stripPrefix: false
     ms-hub:
       path: /hub/v1/**
       serviceId: MS-HUB
       stripPrefix: false  
-    backoffice-web:
-      path: /backoffice-web/v1/**
-      serviceId: BACKOFFICE-WEB
-      stripPrefix: false
     ms-hub-backoffice:
       path: /hub-backoffice/v1/**
       serviceId: MS-HUB-BACKOFFICE
-      stripPrefix: false
+      stripPrefix: false 
     ms-hub-backoffice-liquidacion:
       path: /ms-hub-backoffice-liquidacion/v1/**
       serviceId: MS-HUB-BACKOFFICE-LIQUIDACION
@@ -61,14 +65,14 @@ zuul:
       path: /ms-hub-backoffice-comercio-liquidacion360/v1/**
       serviceId: MS-HUB-BACKOFFICE-COMERCIO-LIQUIDACION360
       stripPrefix: false
-    ratelimit:
-      enabled: false
-      repository: IN_MEMORY
-      behind-proxy: true
-      default-policy: #optional - will apply unless specific policy exists
-        limit: 20 #optional - request number limit per refresh interval window
-        quota: 1000 #optional - request time limit per refresh interval window (in seconds)
-        refresh-interval: 60 #default value (in seconds)
+  ratelimit:
+    enabled: false
+    repository: IN_MEMORY
+    behind-proxy: true
+    default-policy: #optional - will apply unless specific policy exists
+      limit: 20 #optional - request number limit per refresh interval window
+      quota: 1000 #optional - request time limit per refresh interval window (in seconds)
+      refresh-interval: 60 #default value (in seconds)
     
 hystrix.command.default.execution.isolation.thread.timeoutInMilliseconds: 60000
   
