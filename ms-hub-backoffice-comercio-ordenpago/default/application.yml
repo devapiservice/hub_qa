@@ -22,29 +22,10 @@ spring:
       port: 27017
       database: hub
       
-server.port: ${PORT:9090}
+server.port: ${PORT:9097}
 server:
   servlet:
     context-path: /ms-hub-backoffice-comercio-ordenpago/v1
-
-management:
-  security:
-    sessions: stateless
-    enabled: false
-  context-path: /admin
-  port: ${PORT_ADMIN:}
-
-endpoints:
-  restart:
-    enabled: true
-  shutdown:
-    enabled: true
-    
-logging:
-  level:
-    org.springframework.boot: 'INFO'
-    org.springframework.cloud: 'DEBUG'
-    com.atsistemas: 'DEBUG'
 
 config:
   host: http://172.18.0.4/api/
