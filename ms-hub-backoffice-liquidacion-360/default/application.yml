@@ -1,7 +1,7 @@
 spring:
   datasource:
     driver-class-name: org.postgresql.Driver
-    url: jdbc:postgresql://10.40.4.79:5432/hub-desarrollo
+    url: jdbc:postgresql://10.40.4.79:5432/hub-QA
     username: hub-desa
     password: Apimono123
   jpa:
@@ -21,11 +21,11 @@ spring:
       host: localhost
       port: 27017
       database: hub
-      
+
 server.port: ${PORT:9093}
 server:
   servlet:
-    context-path: ms-hub-backoffice-liquidacion-360/v1
+    context-path: /ms-hub-backoffice-liquidacion-360/v1
 
 config:
   host: http://172.18.0.4/api/
