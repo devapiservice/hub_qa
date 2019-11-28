@@ -3,8 +3,8 @@ spring:
     platform: postgresql
     driver-class-name: org.postgresql.Driver
     url: jdbc:postgresql://10.40.4.79:5432/hub-QA
-    username: hub
-    password: YUHeHMHdcj
+    username: hub-desa
+    password: Apimono123
   jpa:
     database: POSTGRESQL
     show-sql: true
@@ -14,27 +14,29 @@ spring:
     properties:
       hibernate:
         default_schema: hub
+#        temp:
+#          use_jdbc_metadata_defaults: false 
   data:
     mongodb:
       host: 10.40.4.98
       port: 27017
       database: hub
   rabbitmq:
-      host: 172.18.0.3
+      host: 10.40.4.94
       port: 5672
       username: guest
       password: guest
             
 config:
-  host: http://172.18.0.4/api/
-  uri_token_hub: http://172.18.0.4/api/oauth/token
-  host_sifco: http://172.18.0.56:80/
- queue:
-   exchange: exchange
-   queue: primary
-   queue-consulta-planespago-sifco-endpoint: queue.mapSifco-EndPoint
-   routingkey: routingkey
-      
+  #environment: devel
+  environment: qa
+  # environment: produc
+  queue:
+    exchange: exchange
+    queue: config.queue.queue-consulta-planespago-sifco-endpoint
+    routingkey: routingkey
+    
+    
 security:
   sessions: stateless
   basic:
